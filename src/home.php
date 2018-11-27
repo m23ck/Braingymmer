@@ -14,7 +14,7 @@
     <button>Other</button>
 
     <div class="game">
-        <a href="/hangman/hangman.html"> hangman </a>  
+        <a href="hangman/hangman.html"> hangman </a>  
     
     
     

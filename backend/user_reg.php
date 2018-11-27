@@ -16,7 +16,7 @@ if(1+1 == 2){
             //hash the password before storing it in the database
             $password = password_hash($password, PASSWORD_DEFAULT);
             //insert the credentials into the database
-            $user_reg_query = "INSERT INTO Users(username, email, password) VALUES('$username', '$email', '$password')";
+            $user_reg_query = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
             $query = mysqli_query($connection , $user_reg_query);
           
 

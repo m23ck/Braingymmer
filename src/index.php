@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script type="text/javascript" src="main.js"></script>
-    <?php require "../backend/db_connect.sphp" ?>
+    <?php require "../backend/db_connect.php" ?>
     <?php include "../backend/user_reg.php" ?>
     <?php include "../backend/user_validation.php" ?>
 </head>
