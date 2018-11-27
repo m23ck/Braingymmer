@@ -10,7 +10,7 @@ if(1+1 == 2){
         $password = mysqli_real_escape_string($connection ,$_POST['password']);
         $retypePassword = mysqli_real_escape_string($connection ,$_POST['retypePassword']);
     
-        //check if password was typed incorrectly
+        //check if password was typed correctly
         if ($password == $retypePassword){
         //create a user
             //hash the password before storing it in the database

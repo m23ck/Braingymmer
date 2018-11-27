@@ -9,7 +9,20 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>loading..</h1>
+    <h1>Kies een Brainteaser</h1>
+
+    <button>Other</button>
+
+    <div class="game">
+        <a href="/hangman/hangman.html"> hangman </a>  
+    
+    
+    
+    
+    </div>
+
+
+
 
 
 
