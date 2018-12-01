@@ -1,17 +1,24 @@
 <?php  
 include "user_registration.php";
-include "user_validation.php";
-require "db_connect.php";
 
-if (count($errors) > 0) : ?>
-  <div class="error">
 
-  	<?php foreach ($errors as $error) : ?>
 
-  	  <p><?php echo $error ?></p>
+    if (count($errors) > 0){
+        echo "<div class='error'>";
 
-  	<?php endforeach ?>
+        
+            foreach($errors as $error): 
 
-  </div>
+                echo '<p>';
+                echo $error;
+                echo '</p>';
 
-<?php  endif ?>
+            endforeach;
+
+        echo "</div>";
+
+        }
+    else{
+        echo "no errors were found";
+        }
+  ?>
