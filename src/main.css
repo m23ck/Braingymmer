@@ -1,0 +1,47 @@
+body {
+  font-family: cursive;
+}
+
+.container {
+  position: relative;
+  top: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+input {
+  border-radius: 0px;
+  border: 2px solid gray;
+  width: 450px;
+  height: 45px;
+  font-size: 28px;
+  transition: 0.2s;
+  border-top-left-radius: 0px;
+  border-bottom: 2px solid gray;
+  background: solid black;
+  font-family: cursive;
+}
+
+input:focus {
+  border: 2px solid #4986E8;
+  transition: 0.2s;
+  border-left: 12px solid #4986E8;
+  width: 440px;
+}
+
+button {
+  border: 2px solid grey;
+  width: 150px;
+  height: 45px;
+  background: white;
+  cursor: pointer;
+  color: grey;
+  font-size: 30px;
+}
+
+button:hover {
+  color: #4986E8;
+  border: 2px solid #4986E8;
+}
+
+/*# sourceMappingURL=main.css.map */
