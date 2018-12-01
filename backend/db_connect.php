@@ -13,6 +13,7 @@ if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 } 
 
-else{ "Connected successfully";
+else{ 
+    echo "Connected successfully";
 }
 ?>

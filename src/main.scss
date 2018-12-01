@@ -1,4 +1,6 @@
 
+$color_focus: #4986E8;
+
 body {
 font-family: cursive;
 }
@@ -9,7 +11,6 @@ position: relative;
 top: 10px;
 width: 500px;
 height: 300px;
-
 
 }
 input {
@@ -25,9 +26,9 @@ background: solid black;
 font-family: cursive;
 }
 input:focus {
-border: 2px solid #4986E8;
+border: 2px solid $color_focus;
 transition: 0.2s;
-border-left: 12px solid #4986E8;
+border-left: 12px solid $color_focus;
 width: 440px;
 }
 
@@ -41,7 +42,7 @@ color: grey;
 font-size: 30px;
 }
 button:hover {
-color: #4986E8;
-border: 2px solid #4986E8;
+color: $color_focus;
+border: 2px solid $color_focus;
 }
 
