@@ -1,8 +1,6 @@
 <?php  
 include "user_registration.php";
 
-
-
     if (count($errors) > 0){
         echo "<div class='error'>";
 
@@ -19,6 +17,8 @@ include "user_registration.php";
 
         }
     else{
-        echo "no errors were found";
+        exit();
+        echo "$meldingen"; 
+        
         }
   ?>

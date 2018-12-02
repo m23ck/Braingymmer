@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script type="text/javascript" src="main.js"></script>
-    <?php 
-        require "../backend/db_connect.php";
-        include "../backend/user_registratration.php";
-        include "../backend/user_validation.php";
-    ?>
+   
 </head>
 <body>
 
@@ -24,7 +19,7 @@
         </div>
 
 
-        <form action="home.html" method="POST" id="loginform">
+        <form action="home.php" method="POST" id="loginform">
             
             <input type="text" name="username" placeholder="Username">
             <br></br>
@@ -35,7 +30,7 @@
             <button type="submit" name="btn_login">Login</button>
         </form>
 
-        <form action="index.html" method="POST" style="display: none;" id="registrationform">
+        <form action="../backend/user_registration1.php" method="POST" style="display: none;" id="registrationform">
            
             <input type="text" name="username" placeholder="Username">
             <br></br>
