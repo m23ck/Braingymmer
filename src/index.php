@@ -19,7 +19,7 @@
         </div>
 
 
-        <form action="home.php" method="POST" id="loginform">
+        <form action="../backend/user_validation.php" method="POST" id="loginform">
             
             <input type="text" name="username" placeholder="Username">
             <br></br>
@@ -30,7 +30,7 @@
             <button type="submit" name="btn_login">Login</button>
         </form>
 
-        <form action="../backend/user_registration1.php" method="POST" style="display: none;" id="registrationform">
+        <form action="../backend/user_registration.php" method="POST" style="display: none;" id="registrationform">
            
             <input type="text" name="username" placeholder="Username">
             <br></br>

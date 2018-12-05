@@ -12,7 +12,7 @@
 
     //Register User
     if (isset($_POST['btn_register'])){
-        //check if
+        //check if the fields are not empty
         if ( ( !empty($username) || !empty($email) || !empty($password) || !empty($retype_password))  ){
             
             //check if credentials are already in use
