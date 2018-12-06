@@ -1,8 +1,9 @@
 <?php
-    session_start();
+    
 
    if(isset($_POST["btn_login"]))
    {
+       session_start();
        require "db_connect.php";
        $username = mysqli_real_escape_string($connection , $_POST["username"]);
        $password = mysqli_real_escape_string($connection , $_POST["password"]);

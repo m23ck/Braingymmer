@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+  <title>Hangman</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container-fluid small-wrap">
+  <div class="pt-2 row text-center justify-content-center">
+    <button id="newGame" class="btn btn-primary btn-sm">New Game</button>
+  </div>
+  <div id="hangman-figure" class="d-flex justify-content-center pt-5 pb-3">
+    <div id="gallow">
+      <div id="pole">
+        <div id="noose"></div>
+        <div id="diagonal"></div>
+        <div id="base"></div>
+      </div>
+    </div>
+    <div id="stick-figure" class="swinging">
+      <svg height="150" width="150">
+        <circle id="hangman-head"      class="show-hangman" cx="25" cy="25" r="10"/>
+        <line   id="hangman-body"      class="show-hangman" x1="25" y1="34" x2="25" y2="85"/>
+        <line   id="hangman-leftArm"   class="show-hangman" x1="0" y1="70" x2="25" y2="40"/>
+        <line   id="hangman-rightArm"  class="show-hangman" x1="25" y1="40" x2="55" y2="70"/>
+        <line   id="hangman-leftLeg"   class="show-hangman" x1="25" y1="85" x2="0" y2="120"/>
+        <line   id="hangman-rightLeg"  class="show-hangman" x1="25" y1="85" x2="55" y2="120"/>
+      </svg>
+    </div>
+  </div>
+  <div id="word-letters" class="row justify-content-center pt-5">
+    <div class="col-sm-1 guessed-right">H</div>&emsp;
+    <div class="col-sm-1 guessed-right">A</div>&emsp;
+    <div class="col-sm-1 guessed-right">N</div>&emsp;
+    <div class="col-sm-1 guessed-right">G</div>&emsp;
+    <div class="col-sm-1 guessed-right">M</div>&emsp;
+    <div class="col-sm-1 guessed-right">A</div>&emsp;
+    <div class="col-sm-1 guessed-right">N</div>&emsp;
+  </div>
+</div>
+<div class="text-center pt-4">
+  <p id="category-label" class="badge badge-pill badge-danger">
+    <span id="newCategory">Click New Game</span>
+  </p>
+</div>
+<div class="pt-2 small-wrap">
+  <div id="alphabet" class="text-center">
+    <div class="row justify-content-center">
+      <button id="A" class="btn btn-primary letter m-1">A</button>
+      <button id="B" class="btn btn-primary letter m-1">B</button>
+      <button id="C" class="btn btn-primary letter m-1">C</button>
+      <button id="D" class="btn btn-primary letter m-1">D</button>
+      <button id="E" class="btn btn-primary letter m-1">E</button>
+      <button id="F" class="btn btn-primary letter m-1">F</button>
+      <button id="G" class="btn btn-primary letter m-1">G</button>
+    </div>
+    <div class="row justify-content-center">
+      <button id="H" class="btn btn-primary letter m-1">H</button>
+      <button id="I" class="btn btn-primary letter m-1">I</button>
+      <button id="J" class="btn btn-primary letter m-1">J</button>
+      <button id="K" class="btn btn-primary letter m-1">K</button>
+      <button id="L" class="btn btn-primary letter m-1">L</button>
+      <button id="M" class="btn btn-primary letter m-1">M</button>
+      <button id="N" class="btn btn-primary letter m-1">N</button>
+    </div>
+    <div class="row justify-content-center">
+      <button id="O" class="btn btn-primary letter m-1">O</button>
+      <button id="P" class="btn btn-primary letter m-1">P</button>
+      <button id="Q" class="btn btn-primary letter m-1">Q</button>
+      <button id="R" class="btn btn-primary letter m-1">R</button>
+      <button id="S" class="btn btn-primary letter m-1">S</button>
+      <button id="T" class="btn btn-primary letter m-1">T</button>
+      <button id="U" class="btn btn-primary letter m-1">U</button>
+    </div>
+    <div class="row justify-content-center">
+      <button id="V" class="btn btn-primary letter m-1">V</button>
+      <button id="W" class="btn btn-primary letter m-1">W</button>
+      <button id="X" class="btn btn-primary letter m-1">X</button>
+      <button id="Y" class="btn btn-primary letter m-1">Y</button>
+      <button id="Z" class="btn btn-primary letter m-1">Z</button>
+      <button id="hint" class="btn btn-info m-1">?</button>
+    </div>
+    <div class="pt-3 row justify-content-center">
+      <p id="hintText" class="badge badge-pill badge-warning"></p>
+    </div>
+  </div>
+</div>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

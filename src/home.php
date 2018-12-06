@@ -15,7 +15,9 @@
 
     <div class="game">
         <a href="/Braingymmer/src/hangman/hangman.html"> Hangman </a>  
+        <br>
         <a href="/Braingymmer/src/flappy_dino/dino.html"> Flappy Dino </a>  
+        <br>
         <a href="/Braingymmer/src/memory_game/index.html"> Memory game </a> 
     
     
@@ -24,9 +26,7 @@
     </div>
 
 
-<!-- Training en evaluatie onder leiding van Rahaju.
-Artencraft / teamcoach / evaluatie
-15minuten -->
+
 
 
     

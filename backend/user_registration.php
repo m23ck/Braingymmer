@@ -1,5 +1,5 @@
 <?php 
-     session_start();
+     
     //import the file that makes a connection to the db
     require "db_connect.php";
     
@@ -12,6 +12,7 @@
 
     //Register User
     if (isset($_POST['btn_register'])){
+        session_start();
         //check if the fields are not empty
         if ( ( !empty($username) || !empty($email) || !empty($password) || !empty($retype_password))  ){
             
@@ -38,8 +39,8 @@
             $query_reg = "INSERT INTO users (username, email, password) VALUES('$username', '$email', '$password_hashed')";
             mysqli_query($connection, $query_reg);
         
-            //$_SESSION['username'] = $username;
-            //$_SESSION['success'] = "You are now registered";
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "You are now registered";
             header('location: ../src/index.php?login');
 
             }
@@ -52,4 +53,4 @@
     }
 ?>
 
-//check why the database stores shit even when the form isnt completely filled
+//check why the database gives the wrong error(probably because of your logic)

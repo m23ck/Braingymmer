@@ -1,0 +1,153 @@
+body {
+  background-color: #FFF;
+  font-size: 1rem;
+}
+
+#hangman-figure {
+  padding-top: 1rem;
+}
+
+#pole {
+  height: 10rem;
+  width: 6rem;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+}
+
+#noose {
+  border-right: 3px solid black;
+  height: 1.5rem;
+}
+
+#diagonal {
+  height: 3rem;
+  border-left: 3px solid black;
+  transform: rotate(45deg);
+}
+
+#base {
+  width: 6rem;
+  border-top: 3px solid black;
+  padding-bottom: 3rem;
+  position: absolute;
+  margin-top: 5.25rem;
+  margin-left: -1.55rem;
+}
+
+#stick-figure {
+  position: absolute;
+  margin-left: 6.0999rem;
+  margin-top: 0.9rem;
+}
+
+.swinging {
+  animation: swing 2s ease-in-out infinite alternate;
+}
+
+@keyframes swing {
+  50% {
+    transform: translate3d(4px, 0px, 0px) skew(5deg);
+  }
+  100% {
+    transform: translate3d(-4px, 0px, 0px) skew(-5deg);
+  }
+}
+.guessed-right {
+  border-bottom: 2px solid black;
+  max-width: 2.5rem;
+  text-align: center !important;
+  margin-left: -0.1rem;
+  font-size: 1rem;
+}
+
+.letter {
+  height: 3rem;
+  width: 3rem;
+}
+
+#hint {
+  height: 3rem;
+  width: 6.35rem;
+}
+
+#word-letters {
+  margin-left: 0;
+  height: 75px;
+}
+
+.disableClick {
+  pointer-events: none;
+}
+
+.show-letter {
+  opacity: 1;
+}
+
+.hide-letter {
+  opacity: 0;
+}
+
+.punct {
+  font-weight: 700;
+}
+
+.show-hangman {
+  opacity: 1;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.hide-hangman {
+  opacity: 0;
+}
+
+#hangman-head {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 3;
+}
+
+#hangman-body {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 3;
+}
+
+#hangman-leftArm {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 3;
+}
+
+#hangman-rightArm {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 3;
+}
+
+#hangman-leftLeg {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 3;
+}
+
+#hangman-rightLeg {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 3;
+}
+
+#category-label {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.row {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 415px) {
+  .small-wrap {
+    transform: scale(0.6);
+  }
+}
